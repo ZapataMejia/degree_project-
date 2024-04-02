@@ -113,12 +113,13 @@ body {
 
 .cta {
     display: inline-block;
-    background-color: #2091F9;
+    background-color: #b2b2d6;
     justify-self: center;
     color: #fff;
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
+    position: relative;
 }
 
 /* About */
@@ -188,10 +189,14 @@ body {
     margin-bottom: 15px;
 }
 
-.knowledge__img{
-    width: 100%;
+.knowledge__img {
+    width: calc(100% - 70px); 
     display: block;
+    margin-left: 70px;
+    border-radius: 10px; 
+    overflow: hidden; 
 }
+
 
 /* price */
 
@@ -224,11 +229,11 @@ body {
 .price__element--best{
     width: 370px;
     padding: 60px 40px;
-    background-color: #FF7143;
-    --color-plan: rgb(255 255 255 / 75%);
-    --color-price: #fff;
-    --bg-cta: #9F3919;
-    --color-cta: #FFF;
+    background-color: #b2b2d6;
+    --color-plan: #fff;
+    --color-price: #1D293F;
+    --bg-cta: #fff;
+    --color-cta: #5454D4;
     --color-items: #fff;
 }
 
@@ -310,7 +315,7 @@ body {
 }
 
 .testimony__course{
-    background-color: royalblue;
+    background-color: rgb(87, 108, 172);
     color: #fff;
     display: inline-block;
     padding: 5px;
@@ -456,7 +461,7 @@ body {
     display: inline-block;
     height: 50px;
     padding: 0 20px ;
-    background-color: #2091F9;
+    background-color: #b2b2d6;
     border: none;
     font-size: 1rem;
     color: #fff;
