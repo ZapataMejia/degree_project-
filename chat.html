@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de Salud - Santi Zapata</title>
+    <link rel="stylesheet" href="./css/StyleChat.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Bienvenido a tu Agente de Salud</h1>
+        <div class="agent-selection">
+            <label for="agentSelect">Selecciona tu agente:</label>
+            <select id="agentSelect" onchange="changeAgent()">
+                <option value="Pediatría">Pediatría</option>
+                <option value="Médico General">Médico General</option>
+                <option value="Geriatría">Geriatría</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="chat-container">
+        <div id="chatbox" class="chatbox-messenger">
+            <!-- Aquí se mostrarán los mensajes -->
+        </div>
+
+        <div class="user-input">
+            <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí...">
+            <span id="emojiButton" onclick="sendMessage()">➤</span>
+        </div>
+    </div>
+</div>
+
+<script src="./js/chat.js"></script>
+
+</body>
+</html>

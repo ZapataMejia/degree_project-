@@ -1,0 +1,101 @@
+/* Estilos para la página de chat */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Fondo gris claro */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333; /* Color del título (#333) */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.agent-selection {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.agent-selection label {
+    font-weight: bold;
+}
+
+.agent-selection select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.chat-container {
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 600px; /* Altura máxima del contenedor de chat */
+    background-color: #f0f0f0; /* Fondo gris claro para el chat */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.user-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#userInput {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+#emojiButton {
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 10px;
+    color: #333; /* Color del emoji */
+}
+
+/* Estilos para los mensajes */
+.message {
+    margin-bottom: 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+.sent {
+    float: right;
+    background-color: #6a5acd; /* Color morado (#6a5acd) para mensajes enviados */
+    color: #fff; /* Color del texto */
+    border-radius: 15px 15px 0 15px;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.received {
+    float: left;
+    background-color: #d3d3d3; /* Fondo de mensajes recibidos (gris claro) */
+    color: #333; /* Color del texto */
+    border-radius: 15px 15px 15px 0;
+    padding: 10px;
+    max-width: 70%;
+}
